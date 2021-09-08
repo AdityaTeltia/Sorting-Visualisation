@@ -1,0 +1,12 @@
+.array-container {
+    height: 90vh;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.array-bar {
+  display: inline-block;
+  margin: 0px 1px;
+}

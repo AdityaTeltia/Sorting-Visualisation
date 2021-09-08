@@ -21,13 +21,16 @@ const useStyles = makeStyles((theme: Theme) =>
 export default function ButtonAppBar(props:any) {
   const classes = useStyles();
   const buttonStyle = {
-    color:"white"
+    color:"black",
+    backgroundColor:"white",
+    margin:"0 20px"
   } 
   return (
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
           <Button style = {buttonStyle} onClick = {props.generate}>Generate New Array</Button>
+          <Button style = {buttonStyle} onClick = {props.ms}>Merge Sort</Button>
           <div className={classes.menuButton}>
             <Increase resetSize = {props.size}/>
           </div>

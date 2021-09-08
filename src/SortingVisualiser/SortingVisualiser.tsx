@@ -70,8 +70,7 @@ const SortingVisualiser = () => {
 
     return (
         <>
-            <Navbar generate={resetArray} size={resetSize} />
-            <button onClick = {mergeSort}>MergeSort</button>
+            <Navbar generate={resetArray} size={resetSize} ms = {mergeSort} />
             <div className="array-container">
                 {arr.map((value, idx): any => (
                     <div
